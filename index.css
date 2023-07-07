@@ -62,3 +62,75 @@ header {
   justify-content: space-between;
   padding: 21px 24px 23px 20px;
 }
+.hero-section {
+  background-image: url("./images/article-image-hero.png");
+  background-size: cover;
+  height: 293px;
+  width: 100%;
+  color: #fff;
+  padding: 87px 20px 25px 20px;
+}
+.hero-date {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.hero-heading {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 108.2%;
+  letter-spacing: -0.96px;
+  margin-bottom: 8px;
+}
+.hero-text {
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.blog-posts {
+  display: grid;
+}
+
+@media (min-width: 690px) {
+  .blog-posts {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img img img"
+      "date date date"
+      "title title title"
+      "text text text";
+    gap: 1em;
+  }
+}
+
+.blog-img {
+  width: 100%;
+  margin: 0 auto;
+  grid-area: img;
+}
+.blog-date {
+  grid-area: date;
+  color: #000;
+  font-size: 14.173px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 9px;
+}
+.blog-title {
+  grid-area: title;
+  color: #141414;
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+.blog-text {
+  grid-area: text;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #505050;
+  font-family: "Source Sans 3", sans-serif;
+  margin-bottom: 41px;
+}
