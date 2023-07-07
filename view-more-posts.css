@@ -1,0 +1,37 @@
+.hero-section-white-bg {
+  padding-right: 43px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.hero-heading {
+  color: #151515;
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 108.2%;
+  letter-spacing: -0.96px;
+}
+
+.about-me-heading {
+  margin-bottom: 1em;
+}
+
+.about-me-text {
+  margin-bottom: 1em;
+}
+
+.recent-post-heading {
+  margin-top: 51px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.last-post {
+  margin-bottom: 56px;
+}
