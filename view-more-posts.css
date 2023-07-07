@@ -35,3 +35,12 @@
 .last-post {
   margin-bottom: 56px;
 }
+
+@media (min-width: 690px) {
+  body {
+    background-color: #fafafa;
+  }
+  header {
+    background-color: #fff;
+  }
+}
