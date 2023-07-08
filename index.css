@@ -74,6 +74,20 @@ li {
   flex-direction: column;
   justify-content: end;
 }
+.hero-information {
+  width: 100%;
+}
+.hero-information a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-information a:hover,
+.hero-information a:focus {
+  color: orangered;
+  opacity: 0.8;
+}
+
 .hero-date {
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -116,7 +130,7 @@ main {
   line-height: 125%;
 }
 
-.view-more-link {
+.view-more-btn {
   text-align: center;
   display: block;
   color: #000000;
@@ -164,15 +178,21 @@ footer {
   .logo {
     width: 34.246px;
     height: 34.246px;
+    margin-left: 53px;
   }
   li {
     font-size: 16px;
+    padding-right: 53px;
   }
+
   .hero-section {
     height: 488px;
+    padding-left: 53px;
+    padding-bottom: 59px;
   }
   .hero-information {
-    margin-right: 375px;
+    margin-right: 417px;
+    width: 60%;
   }
   .hero-date {
     font-size: 16px;
@@ -181,6 +201,9 @@ footer {
     font-size: 40px;
     letter-spacing: -1.2px;
     margin-bottom: 8px;
+  }
+  .hero-text {
+    width: 70%;
   }
 
   main {
@@ -193,33 +216,27 @@ footer {
   .blog-img {
     padding-top: 53px;
   }
-  .view-more-link {
+  .view-more-btn {
     font-size: 14.173px;
     margin-top: 31px;
     margin-bottom: 51px;
   }
   .blog-posts {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "img img img"
-      "date date date"
-      "title title title"
-      "text text text";
-    gap: 1em;
+    gap: 26px;
   }
   .blog-img {
     margin: 0 auto;
-    grid-area: img;
   }
   .blog-date {
-    grid-area: date;
     margin-bottom: 14px;
+    font-size: 14px;
   }
   .blog-title {
-    grid-area: title;
+    font-size: 24px;
   }
   .blog-text {
-    grid-area: text;
+    font-size: 16px;
   }
   .hidden {
     display: block;
