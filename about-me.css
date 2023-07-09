@@ -10,7 +10,6 @@
 @media (min-width: 690px) {
   .image-developer {
     display: block;
-    border: 2px solid magenta;
     align-self: center;
     justify-self: center;
     margin-bottom: 0;
@@ -22,10 +21,8 @@
     margin-top: 91px;
     margin-left: 53px;
     margin-bottom: 0;
-    border: 2px solid blue;
   }
   .hero-info-container {
-    border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     align-self: center;

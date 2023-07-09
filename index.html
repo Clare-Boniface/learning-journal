@@ -40,9 +40,17 @@
 
           <i class="fa-solid fa-bars" id="hamburger-menu-icon"></i>
           <ul class="hamburger-menu" id="menu">
-            <i class="fa-solid fa-x" id="close-btn"></i>
-            <li><a href="#" class="active">HOME</a></li>
+            <div class="logo-wrapper-mobile">
+              <img src="./images/logo.png" alt="logo-image" class="logo" />
+              <h1>My learning journal</h1>
+            </div>
+            <div>
+              <i class="fa-solid fa-x" id="close-btn"></i>
+            </div>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <hr />
             <li><a href="about-me.html">ABOUT ME</a></li>
+            <hr />
           </ul>
         </nav>
       </header>
@@ -63,11 +71,11 @@
         </div>
       </section>
 
-      <main>
+      <main class="blog-container">
         <section class="blog-posts">
           <div class="blog-post">
             <img
-              src="./images/article-image-03.png"
+              src="./images/blog-image-06.png"
               class="blog-img"
               alt="open laptop screen showing multiple lines of code"
             />
@@ -79,9 +87,10 @@
               Developer Career Path.
             </p>
           </div>
+
           <div class="blog-post">
             <img
-              src="./images/article-image-02.png"
+              src="./images/blog-image-04.png"
               class="blog-img"
               alt="a hand holding a glass lightbulb"
             />
@@ -93,9 +102,10 @@
               Developer Career Path.
             </p>
           </div>
+
           <div class="blog-post last-post">
             <img
-              src="./images/article-image-01.png"
+              src="./images/blog-image-05.png"
               class="blog-img"
               alt="open laptop screen showing multiple lines of code"
             />
@@ -107,11 +117,13 @@
               Developer Career Path.
             </p>
           </div>
+        </section>
 
-          <div class="blog-post hidden">
+        <section id="extra-posts" class="hidden-posts">
+          <div class="blog-post">
             <img
               src="./images/blog-image-03.png"
-              class="blog-img"
+              class="blog-img new-img"
               alt="a hand holding a glass lightbulb"
             />
             <p class="blog-date">July 7, 2023</p>
@@ -123,10 +135,10 @@
             </p>
           </div>
 
-          <div class="blog-post hidden">
+          <div class="blog-post">
             <img
               src="./images/blog-image-01.png"
-              class="blog-img"
+              class="blog-img new-img"
               alt="a hand holding a glass lightbulb"
             />
             <p class="blog-date">July 7, 2023</p>
@@ -138,10 +150,10 @@
             </p>
           </div>
 
-          <div class="blog-post hidden">
+          <div class="blog-post">
             <img
               src="./images/blog-image-02.png"
-              class="blog-img"
+              class="blog-img new-img"
               alt="a hand holding a glass lightbulb"
             />
             <p class="blog-date">July 7, 2023</p>
@@ -154,7 +166,11 @@
           </div>
         </section>
       </main>
-      <button src="view-more-posts.html" class="view-more-btn">
+      <button
+        src="view-more-posts.html"
+        class="view-more-btn"
+        id="view-more-btn"
+      >
         View More
       </button>
       <footer>
