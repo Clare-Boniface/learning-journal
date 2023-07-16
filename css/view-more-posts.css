@@ -14,37 +14,22 @@
 .feature-img {
   border-radius: 3px;
   display: block;
-  width: 99%;
+  width: 100%;
   padding: 0 1.25em 0em 1.25em;
-  margin: 0 auto;
 }
 .about-me-information {
   margin-top: 2.1875em;
 }
 .about-me-heading {
   margin: 1em 1.06837em;
+  color: #151515;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .about-me-text {
   margin: 1em 1.25em;
-}
-.about-me-heading {
   color: #151515;
-  font-family: Source Sans Pro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
-
-.about-me-text {
-  color: #151515;
-  font-family: Source Sans Pro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .blog-posts {
   margin: 0em 1.25em 0em 1.25em;
 }
@@ -74,7 +59,6 @@
     font-size: 1rem;
     margin: 1.6875em 3.125em 2.25em 3.125em;
   }
-
   .hero-heading {
     font-size: 2.25rem;
     letter-spacing: -1.08px;
@@ -86,10 +70,8 @@
   .feature-img {
     width: 100%;
     padding: 0 3.3125em 0em 3.3125em;
-    margin: 0 auto;
   }
   .about-me-information {
-    font-size: 1rem;
     color: #151515;
     margin: 1.6875em 3.125em 2.25em 3.125em;
   }
@@ -97,23 +79,11 @@
   .about-me-text {
     margin: 1em 0;
   }
-
   .about-me-heading {
-    color: #151515;
-    font-family: Source Sans Pro;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 1.5rem;
   }
-
   .about-me-text {
-    color: #151515;
-    font-family: Source Sans Pro;
-    font-size: 18.285px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 1.1428rem;
   }
   .blog-post {
     margin-bottom: 0;
@@ -121,7 +91,7 @@
   .blog-posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 1.25em;
     margin: 1.75em 2.5em 0 2.5em;
   }
 }
@@ -138,11 +108,8 @@
   .hero-heading {
     margin-left: 3.3611em;
   }
-
   .about-me-information {
-    margin-left: 7.5625em;
-    margin-right: 7.5625em;
-    margin-bottom: 4.5625em;
+    margin: 0 7.5625em 4.5625em 7.5625em;
   }
   .blog-posts {
     grid-template-columns: 1fr 1fr 1fr;
@@ -151,6 +118,5 @@
     font-size: 1.5rem;
     line-height: 108.2%;
     margin-top: 0;
-    /* 25.968px */
   }
 }
