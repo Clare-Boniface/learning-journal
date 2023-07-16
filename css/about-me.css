@@ -1,0 +1,65 @@
+.about-me-portrait-image {
+  width: 150px;
+  height: 150px;
+  margin: 1.625em 0 1em 1.25em;
+  border-radius: 50%;
+}
+.hero-about-me-heading {
+  font-size: 2.177375rem;
+  letter-spacing: -1.045px;
+  margin: 0 0.59em 0em 0.59em;
+}
+.hero-about-me-text {
+  color: #151515;
+  font-size: 16px;
+  margin: 1.5em 1.25em;
+}
+.about-me-information {
+  margin-top: 3.125em;
+}
+
+@media (min-width: 600px) {
+  .about-me-portrait-image {
+    margin: 0 1.25em 0 3em;
+    width: 170px;
+    height: 170px;
+  }
+  .hero-container {
+    display: flex;
+    align-items: center;
+  }
+  .hero-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-information {
+    font-size: 1.1428rem;
+  }
+  .blog-posts {
+    margin: 0 1.875em;
+  }
+  .recent-post-heading {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-me-portrait-image {
+    width: 182px;
+    height: 182px;
+    margin-left: 0;
+  }
+  .hero-container {
+    margin: 4em 0em 4.0625em 0em;
+  }
+
+  .hero-section-white-bg {
+    margin: 0 2.65em;
+  }
+  .about-me-information {
+    margin: 0 7.5625em 3.1875em 7.5625em;
+  }
+  .blog-posts {
+    margin: 1.75em 3.3125em;
+  }
+}

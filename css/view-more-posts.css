@@ -1,0 +1,156 @@
+.hero-heading {
+  color: #151515;
+  margin: 1em 0.625em 0.25em 0.625em;
+}
+.hero-date {
+  color: #151515;
+  font-size: 0.75rem;
+  margin: 2.666667em 1.66666667em 1.333333em 1.66666667em;
+}
+.hero-text {
+  color: #151515;
+  margin: 1em 1.25em 2.25em 1.25em;
+}
+.feature-img {
+  border-radius: 3px;
+  display: block;
+  width: 99%;
+  padding: 0 1.25em 0em 1.25em;
+  margin: 0 auto;
+}
+.about-me-information {
+  margin-top: 2.1875em;
+}
+.about-me-heading {
+  margin: 1em 1.06837em;
+}
+.about-me-text {
+  margin: 1em 1.25em;
+}
+.about-me-heading {
+  color: #151515;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-me-text {
+  color: #151515;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-posts {
+  margin: 0em 1.25em 0em 1.25em;
+}
+.last-post {
+  margin-bottom: 3.5em;
+}
+.recent-post-heading {
+  margin-top: 3.1875em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #fafafa;
+  }
+  main {
+    padding: 0;
+  }
+  header {
+    background-color: #fff;
+  }
+  .hero-date {
+    font-size: 1rem;
+    margin: 4.4375em 3.125em 1.5em 3.125em;
+  }
+  .hero-text {
+    font-size: 1rem;
+    margin: 1.6875em 3.125em 2.25em 3.125em;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+    letter-spacing: -1.08px;
+    margin: 0 1.388889em 0 1.388889em;
+  }
+  .hero-container {
+    margin: 3em 1em 3em 1em;
+  }
+  .feature-img {
+    width: 100%;
+    padding: 0 3.3125em 0em 3.3125em;
+    margin: 0 auto;
+  }
+  .about-me-information {
+    font-size: 1rem;
+    color: #151515;
+    margin: 1.6875em 3.125em 2.25em 3.125em;
+  }
+  .about-me-heading,
+  .about-me-text {
+    margin: 1em 0;
+  }
+
+  .about-me-heading {
+    color: #151515;
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .about-me-text {
+    color: #151515;
+    font-family: Source Sans Pro;
+    font-size: 18.285px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .blog-post {
+    margin-bottom: 0;
+  }
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 1.75em 2.5em 0 2.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero-section-white-bg {
+    font-size: 1.25rem;
+  }
+  .hero-date,
+  .hero-text {
+    margin-left: 7.5625em;
+    margin-right: 7.5625em;
+  }
+  .hero-heading {
+    margin-left: 3.3611em;
+  }
+
+  .about-me-information {
+    margin-left: 7.5625em;
+    margin-right: 7.5625em;
+    margin-bottom: 4.5625em;
+  }
+  .blog-posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recent-post-heading {
+    font-size: 1.5rem;
+    line-height: 108.2%;
+    margin-top: 0;
+    /* 25.968px */
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Learning Journal</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,44 +12,52 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="view-more-posts.css" />
+    <!-- Font Awesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/view-more-posts.css" />
   </head>
-
   <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-wrapper">
+        <img src="../images/logo.png" alt="logo-image" class="logo" />
+        <h1>My learning journal</h1>
+      </div>
+      <!-- Navigation for larger screens -->
+      <nav class="navigation">
+        <ul class="nav-list-items hidden">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about-me.html">ABOUT ME</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger Menu on Small Screens -->
+      <nav>
+        <i class="fa-solid fa-bars" id="hamburger-menu-icon"></i>
+        <ul class="hamburger-menu" id="menu">
+          <div class="logo-wrapper-mobile">
+            <img src="../images/logo.png" alt="logo-image" class="logo" />
+            <h1>My learning journal</h1>
+            <i class="fa-solid fa-x" id="close-btn"></i>
+          </div>
+          <li><a href="./index.html">HOME</a></li>
+          <hr />
+          <li><a href="./about-me.html">ABOUT ME</a></li>
+          <hr />
+        </ul>
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <div class="logo-wrapper">
-          <img src="./images/logo.png" alt="logo-image" class="logo" />
-          <h1>My learning journal</h1>
-        </div>
-        <nav>
-          <ul class="nav-list-items hidden">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="about-me.html">ABOUT ME</a></li>
-          </ul>
-
-          <i class="fa-solid fa-bars" id="hamburger-menu-icon"></i>
-          <ul class="hamburger-menu" id="menu">
-            <div class="logo-wrapper-mobile">
-              <img src="./images/logo.png" alt="logo-image" class="logo" />
-              <h1>My learning journal</h1>
-            </div>
-            <div>
-              <i class="fa-solid fa-x" id="close-btn"></i>
-            </div>
-            <li><a href="#" class="active">HOME</a></li>
-            <hr />
-            <li><a href="about-me.html">ABOUT ME</a></li>
-            <hr />
-          </ul>
-        </nav>
-      </header>
-
       <section class="hero-section-white-bg">
         <p class="hero-date">July 7, 2023</p>
         <h2 class="hero-heading">My new journey as a bootcamp student.</h2>
@@ -57,12 +66,12 @@
           Path, I've made the big jump over to the Bootcamp to get expert code
           reviews of my Solo Projects projects and meet like-minded peers.
         </p>
-        <img
-          src="./images/article-image.png"
-          class="blog-img"
-          alt="open laptop screen on desk with sunset scene in the background"
-        />
       </section>
+      <img
+        src="../images/article-image.png"
+        class="feature-img"
+        alt="open laptop screen on desk with sunset scene in the background"
+      />
 
       <main>
         <article class="about-me-information">
@@ -72,7 +81,6 @@
             hours and hours learning, then try to create simple projects using
             what I learned or work new techniques into existing projects.
           </p>
-
           <p class="about-me-text">
             While that was fun, I felt like it would be helpful to share what I
             was learning and most things about my journey with the world.
@@ -94,7 +102,7 @@
         <section class="blog-posts">
           <div class="blog-post">
             <img
-              src="./images/article-image-03.png"
+              src="../images/article-image-03.png"
               class="blog-img"
               alt="open laptop screen showing multiple lines of code"
             />
@@ -108,7 +116,7 @@
           </div>
           <div class="blog-post">
             <img
-              src="./images/article-image-02.png"
+              src="../images/article-image-02.png"
               class="blog-img"
               alt="a hand holding a glass lightbulb"
             />
@@ -122,9 +130,9 @@
           </div>
           <div class="blog-post last-post">
             <img
-              src="./images/article-image-01.png"
+              src="../images/article-image-01.png"
               class="blog-img"
-              alt="open laptop screen showing multiple lines of code"
+              alt="an open laptop on a desk showing a message that states that I design and develop experiences that make people's lives simple"
             />
             <p class="blog-date">July 7, 2023</p>
             <h3 class="blog-title">Blog three</h3>
@@ -141,5 +149,6 @@
         <p class="footer-subtitle">Copyright &copy;2023</p>
       </footer>
     </div>
+    <script src="../script.js" type="module"></script>
   </body>
 </html>
