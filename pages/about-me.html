@@ -24,8 +24,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/view-more-posts.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about-me.css" />
   </head>
   <body>
     <!-- Header -->
@@ -34,45 +34,58 @@
         <img src="../images/logo.png" alt="logo-image" class="logo" />
         <h1>My learning journal</h1>
       </div>
+      <!--  logo-wrapper  -->
       <!-- Navigation for larger screens -->
       <nav class="navigation">
         <ul class="nav-list-items hidden">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./about-me.html">ABOUT ME</a></li>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about-me.html" class="active">ABOUT ME</a></li>
         </ul>
+        <!--  nav-list-items hidden  -->
       </nav>
+      <!--  navigation  -->
       <!-- Hamburger Menu on Small Screens -->
       <nav>
-        <i class="fa-solid fa-bars" id="hamburger-menu-icon"></i>
-        <ul class="hamburger-menu" id="menu">
+        <i class="fa-solid fa-bars" id="about-me-hamburger-menu-icon"></i>
+        <ul class="hamburger-menu" id="about-me-menu">
           <div class="logo-wrapper-mobile">
             <img src="../images/logo.png" alt="logo-image" class="logo" />
             <h1>My learning journal</h1>
-            <i class="fa-solid fa-x" id="close-btn"></i>
+            <i class="fa-solid fa-x" id="about-me-close-btn"></i>
           </div>
-          <li><a href="./index.html">HOME</a></li>
+          <!--  logo-wrapper-mobile  -->
+          <li><a href="../index.html">HOME</a></li>
           <hr />
-          <li><a href="./about-me.html">ABOUT ME</a></li>
+          <li><a href="./about-me.html" class="active">ABOUT ME</a></li>
           <hr />
         </ul>
+        <!--  hamburger-menu  -->
       </nav>
     </header>
     <div class="container">
       <section class="hero-section-white-bg">
-        <p class="hero-date">July 7, 2023</p>
-        <h2 class="hero-heading">My new journey as a bootcamp student.</h2>
-        <p class="hero-text">
-          After several months of learning in the Frontend Developer Career
-          Path, I've made the big jump over to the Bootcamp to get expert code
-          reviews of my Solo Projects projects and meet like-minded peers.
-        </p>
+        <div class="hero-container">
+          <img
+            src="../images/clare.jpeg"
+            class="about-me-portrait-image"
+            alt="Clare Boniface the web developer"
+          />
+          <div class="hero-info-container">
+            <h2 class="hero-about-me-heading">
+              Hi there! My name is Clare and welcome to my learning journal
+            </h2>
+            <p class="hero-about-me-text">
+              After several months of learning in the Frontend Developer Career
+              Path, I've made the big jump over to the Bootcamp to get expert
+              code reviews of my Solo Projects projects and meet like-minded
+              peers.
+            </p>
+          </div>
+          <!--  hero-info-container  -->
+        </div>
+        <!--  hero-container  -->
       </section>
-      <img
-        src="../images/article-image.png"
-        class="feature-img"
-        alt="open laptop screen on desk with sunset scene in the background"
-      />
-
+      <!--  hero-section-white-bg  -->
       <main>
         <article class="about-me-information">
           <h3 class="about-me-heading">How I stay committed to learning</h3>
@@ -98,57 +111,18 @@
             motivated.
           </p>
         </article>
+        <!--  about-me-information  -->
         <h4 class="recent-post-heading">Recent posts</h4>
-        <section class="blog-posts">
-          <div class="blog-post">
-            <img
-              src="../images/article-image-03.png"
-              class="blog-img"
-              alt="open laptop screen showing multiple lines of code"
-            />
-            <p class="blog-date">July 7, 2023</p>
-            <h3 class="blog-title">Blog one</h3>
-            <p class="blog-text">
-              I'm excited to start a new learning journey as a Scrimba Bootcamp
-              student! After several months of learning in the Frontend
-              Developer Career Path.
-            </p>
-          </div>
-          <div class="blog-post">
-            <img
-              src="../images/article-image-02.png"
-              class="blog-img"
-              alt="a hand holding a glass lightbulb"
-            />
-            <p class="blog-date">July 7, 2023</p>
-            <h3 class="blog-title">Blog two</h3>
-            <p class="blog-text">
-              I'm excited to start a new learning journey as a Scrimba Bootcamp
-              student! After several months of learning in the Frontend
-              Developer Career Path.
-            </p>
-          </div>
-          <div class="blog-post last-post">
-            <img
-              src="../images/article-image-01.png"
-              class="blog-img"
-              alt="an open laptop on a desk showing a message that states that I design and develop experiences that make people's lives simple"
-            />
-            <p class="blog-date">July 7, 2023</p>
-            <h3 class="blog-title">Blog three</h3>
-            <p class="blog-text">
-              I'm excited to start a new learning journey as a Scrimba Bootcamp
-              student! After several months of learning in the Frontend
-              Developer Career Path.
-            </p>
-          </div>
-        </section>
+
+        <section class="blog-container" id="about-me-blog-container"></section>
       </main>
+
       <footer>
         <p class="footer-title">My Learning Journal</p>
         <p class="footer-subtitle">Copyright &copy;2023</p>
       </footer>
     </div>
-    <script src="../script.js" type="module"></script>
+    <!--  container  -->
+    <script src="../js/about-me.js" type="module"></script>
   </body>
 </html>

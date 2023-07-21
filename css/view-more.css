@@ -40,6 +40,9 @@
   margin-top: 3.1875em;
   text-align: center;
 }
+blog-img {
+  width: 100%;
+}
 
 @media (min-width: 600px) {
   body {
