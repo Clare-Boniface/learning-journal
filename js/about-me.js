@@ -1,4 +1,4 @@
-import { blogData } from "../data.js";
+import { blogData } from "./data.js";
 
 const aboutMeMenu = document.getElementById("about-me-menu");
 const aboutMeHamburgerIcon = document.getElementById(
@@ -15,15 +15,12 @@ function renderBlogs(num) {
     htmlString += `<div class="blog-post">
     <img
       src=${blogData[i].src}
-      class="blog-img new-img"
+      class="blog-img"
       alt=${blogData[i].alt}
     />
-    <p class=${blogData[i].date}>July 7, 2023</p>
+    <p class="blog-date">${blogData[i].date}</p>
     <h3 class="blog-title">${blogData[i].title}</h3>
-    <p class=${blogData[i].text}>
-      I'm excited to start a new learning journey as a Scrimba Bootcamp
-      student! After several months of learning in the Frontend
-      Developer Career Path.
+    <p class="blog-text">${blogData[i].text}
     </p>
   </div>
   `;

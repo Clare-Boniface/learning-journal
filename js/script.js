@@ -1,4 +1,4 @@
-import { blogData } from "../data.js";
+import { blogData } from "./data.js";
 
 const menu = document.getElementById("menu");
 const hamburgerIcon = document.getElementById("hamburger-menu-icon");
@@ -6,7 +6,7 @@ const closeBtn = document.getElementById("close-btn");
 const viewPostBtn = document.getElementById("view-more-btn");
 const blogContainer = document.getElementById("blog-container");
 
-renderBlogs(6);
+renderBlogs(3);
 
 function renderBlogs(num) {
   let htmlString = "";

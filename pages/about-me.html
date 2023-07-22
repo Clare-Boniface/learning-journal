@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/about-me.css" />
   </head>
-  <body>
+  <body class="white-bg-body">
     <!-- Header -->
-    <header>
+    <header class="white-bg-header">
       <div class="logo-wrapper">
         <img src="../images/logo.png" alt="logo-image" class="logo" />
         <h1>My learning journal</h1>
@@ -55,26 +55,25 @@
           </div>
           <!--  logo-wrapper-mobile  -->
           <li><a href="../index.html">HOME</a></li>
-          <hr />
+
           <li><a href="./about-me.html" class="active">ABOUT ME</a></li>
-          <hr />
         </ul>
         <!--  hamburger-menu  -->
       </nav>
     </header>
     <div class="container">
       <section class="hero-section-white-bg">
-        <div class="hero-container">
+        <div class="hero-container about-me-hero-container">
           <img
             src="../images/clare.jpeg"
             class="about-me-portrait-image"
             alt="Clare Boniface the web developer"
           />
-          <div class="hero-info-container">
-            <h2 class="hero-about-me-heading">
+          <div class="hero-info-container about-me-info-container">
+            <h2 class="hero-about-me-heading hero-dark-heading">
               Hi there! My name is Clare and welcome to my learning journal
             </h2>
-            <p class="hero-about-me-text">
+            <p class="hero-about-me-text hero-dark-text">
               After several months of learning in the Frontend Developer Career
               Path, I've made the big jump over to the Bootcamp to get expert
               code reviews of my Solo Projects projects and meet like-minded
@@ -114,7 +113,9 @@
         <!--  about-me-information  -->
         <h4 class="recent-post-heading">Recent posts</h4>
 
-        <section class="blog-container" id="about-me-blog-container"></section>
+        <article class="blog-container" id="about-me-blog-container">
+          <!-- JS dynamically renders the blog posts-->
+        </article>
       </main>
 
       <footer>
